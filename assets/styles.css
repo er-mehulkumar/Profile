@@ -1,4 +1,4 @@
-/* General styles */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +6,154 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
-    color: #333
+    color: #333;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.navbar .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar nav ul {
+    list-style-type: none;
+}
+
+.navbar nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://via.placeholder.com/1600x600');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero .container {
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.hero .button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f4a261;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero .button:hover {
+    background-color: #e76f51;
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+section:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer ul.social-icons {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer ul.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer ul.social-icons li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.footer ul.social-icons li a:hover {
+    color: #f4a261;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .button {
+        font-size: 16px;
+    }
+
+    .footer .container {
+        width: 90%;
+    }
+}
