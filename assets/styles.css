@@ -157,3 +157,122 @@ section:nth-child(even) {
         width: 90%;
     }
 }
+
+.about {
+    background-image: url('https://via.placeholder.com/1600x600?text=About+Mehul+Kumar');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills {
+    background-image: url('https://via.placeholder.com/1600x600?text=Skills');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.skills ul.skills-list {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+.skills ul.skills-list li {
+    margin: 10px 0;
+}
+
+.projects {
+    background-image: url('https://via.placeholder.com/1600x600?text=Projects');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.projects .project {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.projects .project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.projects .project p {
+    font-size: 18px;
+}
+
+.contact {
+    background-image: url('https://via.placeholder.com/1600x600?text=Contact+Mehul+Kumar');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    color: white;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    font-size: 18px;
+    margin: 10px 0;
+    display: block;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.contact button {
+    padding: 10px 20px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background-color: #004d99;
+}
+
+.contact .note {
+    font-size: 18px;
+    color: #f4f4f4;
+    text-align: center;
+    margin-top: 20px;
+}
+
